@@ -5,12 +5,15 @@
     </head>
 
     <body>
+        <!--<main> help identify different content areas easier to read and help with Search Engine Optimization (SEO) and accessibility-->
         <main>
             <h1>CatPhotoApp</h1>
+            <!--section used to separate content from the future content-->
             <section>
                 <h2>Cat Photos</h2>
                 <!--TODO: Add link to cat photos-->
                 <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+                <!--<a> used to create a link to different web and if place a text or image it will to be a link-->
                 <a target="_blank" href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
             </section>
             <section>
@@ -31,6 +34,50 @@
                     <figcaption>Cats <em>love</em> lasagna.</figcaption>
                 </figure>
                 <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <!--The strong element is used to indicate that some text is of strong importance or urgent.-->
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Cat Form</h2>
+                <!--form used to create a form collect information from user-->
+                <!--The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form>-->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <!--The input element allows you several ways to collect data from a web form input elements are self-closing and do not need closing tags.-->
+                    <!--There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer.-->
+                    <!--The name attribute help for the form's data to be accessed by the location specified in action attribute-->
+                    <!--Placeholder text is used to give people a hint about what kind of information to enter into an input-->
+                    <!--required help prevent a user from submitting your form when required information is missing-->
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    <!--You can use radio buttons for questions where you want only one answer out of multiple options.-->
+                    <!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers)-->
+                    <!--The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.-->
+                    <!--name used to avoid both radio button can be selected at the same time -->
+                    <!--If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes-->
+                    <!--Because it have name should we need value to return data for radio button-->
+                    <!--The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.-->
+                    <fieldset>
+                        <!--The legend element acts as a caption for the content in the fieldset element.-->
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+                        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <!--Forms commonly use checkboxes for questions that may have more than one answer. -->
+                        <!--There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute-->
+                        <input type="checkbox" id="loving"> <label for="loving">Loving</label>
+                    </fieldset>
+                    <!--Use the button element to create a clickable button.-->
+                    <button type="submit">Submit</button>
+                </form>
             </section>
         </main>
     </body>
