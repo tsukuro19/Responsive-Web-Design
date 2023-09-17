@@ -1,0 +1,120 @@
+h1,h2,p{
+    text-align: center;
+}
+
+/*used to create background color for web*/
+body{
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/*You can use the id selector to target a specific div element. 
+An id selector is defined by a name with a hash symbol directly in front of it #menu is example*/
+/*#menu used to create a type use id of div file html*/
+/*
+#menu{
+    width: 80%;
+    it used to margin (can le) left and right
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+}*/
+/*A class selector is defined by a name with a dot directly in front of it*/
+.menu{
+    width: 80%;
+    /*Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.*/
+    max-width: 500px;
+    /*it used to margin (can le) left and right*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+    /*You can give your menu some space between the content and the sides with various padding properties.*/
+    /*padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;*/
+    padding: 20px;
+}
+
+.flavor,.dessert{
+    width: 75%;
+    text-align: left;
+}
+
+
+
+.price{
+    width: 25%;
+    text-align: right;
+}
+
+/*used for all sub class have class of is item*/
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+h1,h2{
+    font-family: Impact,serif;
+}
+h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 30px;
+}
+
+.established{
+    font-style: italic;
+}
+
+hr{
+    /*Notice how the thickness of the line looks bigger? The default value of a property named border-width is 1px for all edges of hr elements. By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+
+Change the height property of the hr to be 2px, so the total height of it becomes 4px.*/
+    height: 2px;
+    background-color: brown;
+    /*border color help the same color as the background of it*/
+    border-color: brown;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+/*FOOTER*/
+footer{
+    font-size: 14px;
+}
+
+a{
+    color: black;
+}
+/*You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.*/
+a:visited{
+    color:black;
+}
+/*You change properties of a link when the mouse hovers over them*/
+a:hover{
+    color:brown;
+}
+/*You change properties of a link when the link is actually being clicked*/
+a:active{
+    color:white;
+}
+
+.address{
+    margin-bottom: 5px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
