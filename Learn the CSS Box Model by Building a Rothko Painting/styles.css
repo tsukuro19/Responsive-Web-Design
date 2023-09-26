@@ -1,0 +1,57 @@
+.canvas{
+    width:502px;
+    height:602px;
+    background-color: #4d0f00;
+    /*The overflow property specifies what should happen if content overflows an element's box.*/
+    /*This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.*/
+    /*https://www.w3schools.com/cssref/pr_pos_overflow.php*/
+    overflow: hidden;
+    filter: blur(2px);
+}
+
+.frame{
+    border: 50px solid black;
+    width: 500px;
+    padding: 50px 50px 50px 50px;
+    margin: 20px auto;
+}
+
+.one{
+    width: 425px;
+    height:150px;
+    background-color: #efb762;
+    margin: 20px auto;
+    /*The box-shadow property attaches one or more shadows to an element.*/
+    box-shadow: 0 0 3px 3px #efb762;
+    /*The border-radius property defines the radius of the element's corners.*/
+    border-radius: 9px;
+    /*The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.*/
+    /*https://www.w3schools.com/cssref/css3_pr_transform.php*/
+    transform: rotate(-0.6deg);
+}
+
+.two{
+    width:475;
+    height:200px;
+    background-color: #8f0401;
+    box-shadow: 0 0 3px 3px #8f0401;
+    margin: 0 auto 20px;
+    border-radius: 8px 10px 8px 10px;
+    transform: rotate(0.4deg);
+}
+
+.three{
+    width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto;
+    /*The filter property defines visual effects (like blur and saturation) to an element (often <img>).*/
+    filter: blur(2px);
+    box-shadow: 0 0 5px 5px #b20403;
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
+}
+
+.one,.two{
+    filter: blur(1px);
+}
