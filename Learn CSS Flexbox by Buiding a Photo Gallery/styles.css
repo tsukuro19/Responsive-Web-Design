@@ -1,0 +1,35 @@
+/*he global (*) selector*/
+/*The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.*/
+*{
+    box-sizing: border-box;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    color:#fff;
+    border-bottom: 4px solid #fdb347;
+    background-color: #0a0a23;
+}
+
+.gallery{
+    /*https://www.w3schools.com/cssref/pr_class_display.php*/
+    /*find more about flex:https://www.w3schools.com/css/css3_flexbox.asp*/
+    display: flex;
+    /*The flex-direction property specifies the direction of the flexible items.*/
+    /*https://www.w3schools.com/cssref/css3_pr_flex-direction.php*/
+    flex-direction: row;
+}
