@@ -95,3 +95,15 @@ p{
     border-bottom: 1px solid #888989;
 }
 
+.double-indent{
+    margin-left: 2em;
+}
+
+.note{
+    font-size: 0.6rem;
+    margin: 5px 0px;
+    padding: 0px 8px;
+    /*The text-indent property specifies the indentation of the first line in a text-block.*/
+    text-indent: -8px;
+}
+
