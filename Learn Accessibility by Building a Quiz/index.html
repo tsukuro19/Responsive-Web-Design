@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="a project of freecodecamp">
+        <link rel="stylesheet" href="styles.css">
+        <title>Learn HTML/CSS by Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+            <h1>HTML/CSS Quiz</h1>
+            <!--The <nav> tag defines a set of navigation links.-->
+            <nav>
+                <ul>
+                    <li><a href="#student-info">INFO</a></li>
+                    <li><a href="#html-questions">HTML</a></li>
+                    <li><a href="#css-questions">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+                <!--To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies.-->
+                <!--The aria-labelledby attribute identifies the element (or elements) that labels the element it is applied to.-->
+                <section role="region" aria-labelledby="student-info">
+                    <h2 id="student-info">Student info</h2>
+                    <div class="info">
+                        <label for="full-name">Name</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Full name of you" required>
+                    </div>
+                    <div class="info">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="info">
+                        <label for="birthdate">Birthdate</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="html-questions">
+                    <h2 id="html-questions">HTML questions</h2>
+                </section>
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">CSS questions</h2>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
